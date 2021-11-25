@@ -29,7 +29,7 @@ namespace Basket.API
         {
             services.AddStackExchangeRedisCache(option =>
             {
-                option.Configuration = Configuration.GetValue<string>("CacheSetting:ConnectionString");
+                option.Configuration = Configuration.GetValue<string>("CacheSettings:ConnectionString");
             });
 
             services.AddScoped<IBasketRepository, BasketRepository>();
