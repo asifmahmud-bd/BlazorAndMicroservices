@@ -23,6 +23,7 @@ namespace Catalog.API.Data
                 new Product()
                 {
                     Id = "602d2149e773f2a3990b47f5",
+                    Sku= "IP02112101",
                     Name = "IPhone X",
                     Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                     Description = "Dem iphone X ist es nicht anzusehen, dass es refurbished ist. Wie neu..",
@@ -33,6 +34,7 @@ namespace Catalog.API.Data
                 new Product()
                 {
                     Id = "602d2149e773f2a3990b47f6",
+                    Sku= "SM02312101",
                     Name = "Samsung 10",
                     Summary = "This phone is the company's biggest change to its flagship smartphone in years. ",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -43,6 +45,7 @@ namespace Catalog.API.Data
                 new Product()
                 {
                     Id = "602d2149e773f2a3990b47f7",
+                    Sku= "HW03112101",
                     Name = "Huawei Plus",
                     Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
@@ -53,6 +56,7 @@ namespace Catalog.API.Data
                 new Product()
                 {
                     Id = "602d2149e773f2a3990b47f8",
+                    Sku= "XM01112301",
                     Name = "Xiaomi Mi 9",
                     Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit..",
@@ -63,6 +67,7 @@ namespace Catalog.API.Data
                 new Product()
                 {
                     Id = "602d2149e773f2a3990b47f9",
+                    Sku= "HT02162101",
                     Name = "HTC U11+ Plus",
                     Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -73,6 +78,7 @@ namespace Catalog.API.Data
                 new Product()
                 {
                     Id = "602d2149e773f2a3990b47fa",
+                    Sku= "LG02812101",
                     Name = "LG G7 ThinQ",
                     Summary = "This phone is the company's biggest change to its flagship smartphone in years.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",

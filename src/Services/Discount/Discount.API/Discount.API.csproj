@@ -2,24 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Copyright>@asifjalal</Copyright>
-    <Owners>Asif Mahmud Jalal</Owners>
     <DockerComposeProjectPath>../../../docker-compose.dcproj</DockerComposeProjectPath>
-    <UserSecretsId>bdc0ffe5-b9ef-4f42-abcc-b0dd91cd0db6</UserSecretsId>
+    <UserSecretsId>4d820f0c-4f6f-4d28-b0b3-2f8128cbc364</UserSecretsId>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <PackageReference Include="MongoDB.Driver" Version="2.14.0" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Npgsql" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Entities\" />
-    <Folder Include="Data\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 </Project>
