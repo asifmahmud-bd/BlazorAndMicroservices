@@ -78,3 +78,14 @@ services:
     ports:
       - "8002:80"
 
+
+  ocelotapigateway.web:
+    container_name: apigateway.web
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - catalog.api
+      - basket.api
+      - discount.api
+    ports:
+      - "8010:80"

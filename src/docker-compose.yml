@@ -34,11 +34,18 @@ services:
       context: .
       dockerfile: Services/Discount/Discount.API/Dockerfile
 
+  ocelotapigateway.web:
+    image: ${DOCKER_REGISTRY-}ocelotapigateway
+    build:
+      context: .
+      dockerfile: ApiGateways/ApiGateway.Web/OcelotApiGateway.Web/Dockerfile
+
 volumes:
   mongo_data:
   portainer_data:
   postgres_data:
   pgadmin_data:
   
+
 
 
