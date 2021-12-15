@@ -1,12 +1,11 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Npgsql;
 
-namespace Discount.API.Extensions
+namespace Discount.Grpc.Extensions
 {
     public static class HostExtensions
     {
@@ -41,17 +40,17 @@ namespace Discount.API.Extensions
                                                               Amount INT)";
                     command.ExecuteNonQuery();
 
-                    command.CommandText = "INSERT INTO Coupon (Sku, ProductName, Amount) VALUES ('IP02112101', 'IPhone X', 50);";
+                    command.CommandText = "INSERT INTO Coupon (Sku, ProductName, Amount) VALUES ('IP02112101', 'IPhone X', '50');";
                     command.ExecuteNonQuery();
 
-                    command.CommandText = "INSERT INTO Coupon (Sku, ProductName, Amount) VALUES ('XM01112301', 'Xiaomi Mi 9', 88);";
+                    command.CommandText = "INSERT INTO Coupon (Sku, ProductName, Amount) VALUES ('XM01112301', 'Xiaomi Mi 9', '88');";
                     command.ExecuteNonQuery();
 
                     loger.LogInformation("Migration successfull.");
                 }
                 catch(NpgsqlException ex)
                 {
-                    loger.LogInformation("An error occurred when migration prstgresql discount database.");
+                    loger.LogInformation($"An error occurred when migration prstgresql discount database.{ex}");
 
                     if(retryForAvailability < 30)
                     {

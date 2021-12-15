@@ -63,6 +63,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "CacheSettings:ConnectionString=basketdb:6379"
+      - "GrpcSetting:DiscountUrl=http://discount.grpc"
     depends_on:
       - basketdb
     ports:
@@ -78,6 +79,15 @@ services:
     ports:
       - "8002:80"
 
+  discount.grpc:
+    container_name: discount.grpc
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "DatabaseSettings:ConnectionString=Server=discountdb;Port=5432;Database=DiscountDb;User Id=admin;Password=admin1234"
+    depends_on:
+      - discountdb
+    ports:
+      - "8003:80"
 
   ocelotapigateway.web:
     container_name: apigateway.web
@@ -89,3 +99,6 @@ services:
       - discount.api
     ports:
       - "8010:80"
+
+  
+
