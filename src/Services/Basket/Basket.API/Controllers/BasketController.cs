@@ -17,8 +17,8 @@ namespace Basket.API.Controllers
 
         public BasketController(IBasketRepository repository, DiscountGrpcService discountGrpcService)
         {
-            _repository = repository;
-            _discountGrpcService = discountGrpcService;
+            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
+            _discountGrpcService = discountGrpcService ?? throw new ArgumentNullException(nameof(discountGrpcService));
         }
 
         [HttpGet("{userName}", Name = "GetBasket")]
@@ -40,9 +40,9 @@ namespace Basket.API.Controllers
 
             foreach(var item in basket.Items)
             {
-                var coupon = await _discountGrpcService.GetDisCount(item.Sku);
+                //var coupon = await _discountGrpcService.GetDisCount(item.Sku);
 
-                item.Price -= coupon.Amount;
+                //item.Price -= coupon.Amount;
             }
 
             return Ok(await _repository.UpdateBasket(basket));

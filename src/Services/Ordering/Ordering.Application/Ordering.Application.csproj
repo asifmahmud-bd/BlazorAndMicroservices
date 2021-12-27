@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Features\" />
+    <Folder Include="PipelineBehaviours\" />
+    <Folder Include="Contracts\Persistence\" />
+    <Folder Include="Contracts\Infrastructure\" />
+    <Folder Include="Models\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Features\Oders\" />
+    <Folder Include="Features\Oders\Commands\" />
+    <Folder Include="Features\Oders\Queries\" />
+    <Folder Include="Features\Oders\Handler\" />
+    <Folder Include="Features\Oders\Responses\" />
+    <Folder Include="Features\Validator\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+    <PackageReference Include="FluentValidation" Version="10.3.6" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.6" />
+  </ItemGroup>
+</Project>
