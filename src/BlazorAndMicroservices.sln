@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{F8131F28-B893-4E58-8C67-223BFB1C3350}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{BE14DF44-6E7A-4D72-92D4-39778EF8734D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{D1885105-5EA7-4210-B0BC-EDA8536CF4F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +95,10 @@ Global
 		{F8131F28-B893-4E58-8C67-223BFB1C3350}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8131F28-B893-4E58-8C67-223BFB1C3350}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8131F28-B893-4E58-8C67-223BFB1C3350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1885105-5EA7-4210-B0BC-EDA8536CF4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1885105-5EA7-4210-B0BC-EDA8536CF4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1885105-5EA7-4210-B0BC-EDA8536CF4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1885105-5EA7-4210-B0BC-EDA8536CF4F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,5 +123,6 @@ Global
 		{A7D6BDC7-B732-4FAF-8CEB-C42E348FF135} = {592A9251-0154-4FBA-AEE2-D21DCB1948AE}
 		{88286D6A-FD6B-4013-8C4C-DBF3A25F5140} = {592A9251-0154-4FBA-AEE2-D21DCB1948AE}
 		{F8131F28-B893-4E58-8C67-223BFB1C3350} = {592A9251-0154-4FBA-AEE2-D21DCB1948AE}
+		{D1885105-5EA7-4210-B0BC-EDA8536CF4F9} = {BE14DF44-6E7A-4D72-92D4-39778EF8734D}
 	EndGlobalSection
 EndGlobal

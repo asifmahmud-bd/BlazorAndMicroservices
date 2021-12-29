@@ -9,7 +9,6 @@ namespace Ordering.Application.Features.Oders.Commands
         public string UserName { get; set; }
         public decimal TotalPrice { get; set; }
 
-        // Billing Address
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
@@ -18,7 +17,6 @@ namespace Ordering.Application.Features.Oders.Commands
         public string State { get; set; }
         public string ZipCode { get; set; }
 
-        // Payment details 
         public string CardName { get; set; }
         public string CardNumber { get; set; }
         public string Expiration { get; set; }
